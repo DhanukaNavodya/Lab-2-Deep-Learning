@@ -1,12 +1,48 @@
-# Lab-2-Deep-Learning
-1)When the no of iterations increate the accuracy will be increase and the error will be reduce.
+# Lab 2 - Deep Learning
 
-2)
-1.What happens when the number of hidden nodes increases?
+## 1. Effect of Increasing the Number of Iterations
 
-Increasing the number of hidden nodes allows the network to learn more complex decision boundaries. Initially, accuracy improves significantly. However, after a certain point, gains diminish, and very large layers may lead to overfitting (though not always visible here due to small dataset size).
+When the number of **iterations** increases:
 
-2.Can you explain the pattern of the accuracy when the hidden nodes increase?
+* **Accuracy** tends to increase.
+* **Error** tends to decrease.
 
-Accuracy typically increases with more hidden units because the model gains greater expressive power. Small layers (1–2) lack capacity to capture patterns. Medium layers (3–20) perform well. Large layers (50) often achieve highest accuracy but require regularization to avoid overfitting. The pattern is usually: rapid increase → plateau → slight drop or saturation.
+This happens because the model gets more opportunities to adjust its weights and reduce the loss function through repeated training.
+
+---
+
+## 2. Effect of Increasing the Number of Hidden Nodes
+
+### **Q1:** What happens when the number of hidden nodes increases?
+
+* Increasing hidden nodes allows the network to learn more **complex decision boundaries**.
+* Initially, **accuracy improves significantly**.
+* After a certain point, **gains diminish**.
+* Very large hidden layers may lead to **overfitting** (although this might not be obvious in small datasets).
+
+---
+
+### **Q2:** What is the pattern of accuracy when hidden nodes increase?
+
+The general pattern is:
+
+1. **Small layers (1–2 nodes):**
+
+   * Lack capacity to capture patterns.
+   * Accuracy is low.
+
+2. **Medium layers (3–20 nodes):**
+
+   * Perform well and capture more complex features.
+   * Accuracy improves rapidly.
+
+3. **Large layers (50+ nodes):**
+
+   * Often achieve the highest accuracy.
+   * May require **regularization** to avoid overfitting.
+   * Accuracy tends to **plateau** and may slightly drop due to overfitting risk.
+
+**Summary Pattern:**
+📈 Rapid increase → 📊 Plateau → 📉 Slight drop or saturation.
+
 
